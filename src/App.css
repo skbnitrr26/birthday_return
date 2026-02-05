@@ -1,0 +1,79 @@
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.slot-machine {
+  background: #333;
+  padding: 20px;
+  border-radius: 20px;
+  border: 10px solid #ffd700;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.reel {
+  background: white;
+  width: 80px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 10px;
+  border: 2px solid #555;
+}
+
+.spin-button {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  box-shadow: 0 5px #c0392b;
+}
+
+.spin-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #c0392b;
+}
+
+.spin-button:disabled {
+  background: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.error-box {
+  background: #ffe6e6;
+  color: #d63031;
+  border: 2px dashed #d63031;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
