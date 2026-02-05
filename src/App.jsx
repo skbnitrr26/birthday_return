@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import './App.css';
 
-const ITEMS = ['💻', '📶', '📱', '🖨️', '⌨️', '🔋'];
+const ITEMS = ['🍾', '🥂', '🍗', '🍖', '🍧', '🍔', '🥟', '🥤', '🍹', '🍕', '📍', '🍩', '🍚'];
 
 function App() {
   const [reels, setReels] = useState(['🎁', '🎁', '🎁']);
@@ -27,7 +27,7 @@ function App() {
         clearInterval(interval);
         finishSpin();
       }
-    }, 100);
+    }, 250);
   };
 
   const finishSpin = () => {
