@@ -32,7 +32,7 @@ function App() {
 
   const finishSpin = () => {
     // The "Rigged" result
-    setReels(['🚫', '🚫', '🚫']);
+    setReels(['🔕', '🔕', '🔕']);
     setIsSpinning(false);
     setShowError(true);
     
